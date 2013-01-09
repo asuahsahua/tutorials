@@ -22,11 +22,11 @@ tmux list-sessions
 ```
 Re-attach to a session (sessionname optional, connects to last if omitted):
 ```bash
-tmux attach [-s sessionname]
+tmux attach [-t sessionname]
 ```
 Destroy a session:
 ```bash
-tmux destroy [-s sessionname]
+tmux kill-session [-t sessionname]
 ```
 
 All available commands are detailed in `man tmux`.
@@ -117,6 +117,7 @@ Personally, I have a 'pardot' project that I have aliased to `pardot`, and has p
 
 ## Other
 My settings: https://github.com/anthonymarion/dotfiles/blob/master/.tmux.conf
+
 These settings also have a block dedicated to being able to switch panes using <Opt-#> without the prefix.
 
 If you need access to the osx clipboard, then follow the instructions at https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
